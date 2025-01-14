@@ -88,13 +88,14 @@ if status is-interactive
     alias cat bat
     alias top btop
     alias diff colordiff
+    alias tail colortail
     alias wget "curl -O"
     alias vi $EDITOR
     alias vim $EDITOR
     alias nano $EDITOR
     alias e $EDITOR
     alias se "sudo $EDITOR"
-            
+
     # new aliases
     alias s sudo
     alias sl ls
