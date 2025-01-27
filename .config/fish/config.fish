@@ -20,6 +20,7 @@ if status is-interactive
         set -x EDITOR hx
     else if type -q micro
         set -x EDITOR micro
+        set -x MICRO_TRUECOLOR 1
     else
         set -x EDITOR vim
     end
@@ -28,11 +29,6 @@ if status is-interactive
         set -x PAGER most
     else
         set -x PAGER less
-    end
-
-    # Dracula theme support for micro editor
-    if type -q micro
-        set -x MICRO_TRUECOLOR 1
     end
 
     # functions
