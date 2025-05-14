@@ -77,11 +77,16 @@ if status is-interactive
         alias ls eza
     end
 
+    if grep -q ID=debian /etc/os-release
+        alias cat batcat
+    else
+        alias cat bat
+    end
+
     # Prefered programs
     alias dd dc3dd
     alias du ncdu
     alias ping gping
-    alias cat bat
     alias top btop
     alias diff colordiff
     alias tail colortail
