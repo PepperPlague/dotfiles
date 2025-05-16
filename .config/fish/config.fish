@@ -68,6 +68,7 @@ if status is-interactive
                     cd $argv[(count $argv)]
                     return
             end
+
         end
     end
 
@@ -77,8 +78,12 @@ if status is-interactive
         alias ls eza
     end
 
-    if grep -q ID=debian /etc/os-release
-        alias cat batcat
+    if uname -s | grep -q Linux
+        if grep -q ID=debian /etc/os-release
+            alias cat batcat
+        else
+            alias cat bat
+        end
     else
         alias cat bat
     end
