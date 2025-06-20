@@ -78,6 +78,10 @@ if status is-interactive
         alias ls eza
     end
 
+    if type -q rmw
+        alias rm rmw
+    end
+
     if uname -s | grep -q Linux
         if grep -q ID=debian /etc/os-release
             alias cat batcat
@@ -90,11 +94,9 @@ if status is-interactive
 
     # Prefered programs
     alias dd dc3dd
-    alias du ncdu
     alias ping gping
     alias top btop
     alias diff colordiff
-    alias tail colortail
     alias wget "curl -O"
     alias vi $EDITOR
     alias vim $EDITOR
