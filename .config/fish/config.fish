@@ -10,6 +10,7 @@ if status is-interactive
     set -a PATH /opt/homebrew/bin
     set -a PATH /usr/local/bin
     set -a PATH ~/Library/Python/3.9/bin
+    set -x PATH /opt/homebrew/opt/coreutils/libexec/gnubin $PATH
 
     # theme
     fish_config theme choose "Dracula Official"
