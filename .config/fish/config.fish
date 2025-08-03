@@ -4,6 +4,8 @@ set -x -g LANG en_US.UTF-8
 if status is-interactive
     # Commands to run in interactive sessions can go here
 
+    set -U fish_greeting ""
+
     # Set env variables
     set -a PATH ~/bin
     set -a PATH ~/.local/bin
@@ -19,9 +21,6 @@ if status is-interactive
     # Set perferred editors and pager 
     if type -q hx
         set -x EDITOR hx
-    else if type -q micro
-        set -x EDITOR micro
-        set -x MICRO_TRUECOLOR 1
     else
         set -x EDITOR vim
     end
