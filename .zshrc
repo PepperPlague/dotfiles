@@ -90,3 +90,8 @@ fi
 show_prompt
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/timothy/.lmstudio/bin"
+# End of LM Studio CLI section
+

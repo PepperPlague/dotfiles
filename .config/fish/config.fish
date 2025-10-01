@@ -132,3 +132,8 @@ end
 test fzf; and fzf --fish | source
 
 test -e {$HOME}/.iterm2_shell_integration.fish; and source {$HOME}/.iterm2_shell_integration.fish
+
+# Added by LM Studio CLI (lms)
+set -gx PATH $PATH /Users/timothy/.lmstudio/bin
+# End of LM Studio CLI section
+

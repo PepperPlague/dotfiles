@@ -34,3 +34,8 @@ if [ -d $HOME/.npm-packages ]; then
 	export NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
 fi
 
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/timothy/.lmstudio/bin"
+# End of LM Studio CLI section
+

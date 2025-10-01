@@ -16,3 +16,8 @@ case "$-" in
 esac
 PATH="/usr/local/bin:$PATH"
 test -e ~/.iterm2_shell_integration.bash && source ~/.iterm2_shell_integration.bash || true
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/timothy/.lmstudio/bin"
+# End of LM Studio CLI section
+
