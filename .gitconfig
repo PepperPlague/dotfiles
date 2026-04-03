@@ -1,0 +1,39 @@
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    interactive = auto
+    ui = true
+	
+[receive]
+    denyCurrentBranch = updateInstead
+    
+[alias]
+    history = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --branches --date-order
+    pushall = !git remote | xargs -L1 git push --all
+    forcepostreceive = !git commit --amend --no-edit && git push -f live
+
+[gpg]
+    program = gpg2
+
+[credential]
+    helper = cache
+[core]
+    editor = hx
+	excludesfile = /Users/timothy/.gitignore_global
+[protocol]
+	version = 2
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = PepperPlague
+	email = me@gotimothy.com
+[difftool]
+	prompt = false
+[diff]
+	tool = colordiff
+[safe]
+	directory = /srv/git/dotfiles.git
