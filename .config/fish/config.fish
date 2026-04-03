@@ -14,6 +14,9 @@ if status is-interactive
     set -a PATH ~/Library/Python/3.9/bin
     set -x PATH /opt/homebrew/opt/coreutils/libexec/gnubin $PATH
 
+    # gpg
+    set -gx GPG_TTY (tty)
+
     # theme
     fish_config theme choose "Dracula Official"
     starship init fish | source
@@ -136,4 +139,3 @@ test -e {$HOME}/.iterm2_shell_integration.fish; and source {$HOME}/.iterm2_shell
 # Added by LM Studio CLI (lms)
 set -gx PATH $PATH /Users/timothy/.lmstudio/bin
 # End of LM Studio CLI section
-
