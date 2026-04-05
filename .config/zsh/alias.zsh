@@ -23,16 +23,12 @@ alias rm="rm -Iv"
 alias cp="cp -iv"
 alias mv="mv -iv"
 
-have shred && alias shred='shred -fuzvn 1'
-
 ################################################################################
 # if available, replace coreutils with more feature rich programs
 ##
 
 have top && alias top='htop'
-have pydf && alias df='pydf'
 have ncdu && alias du='ncdu'
-have gpg2 && alias gpg='gpg2'
 have curl && alias wget='curl'
 have nvim && alias nano='nvim'
 
@@ -115,7 +111,6 @@ alias mine='sudo chown ${USER}:${USER}'
 alias openports='sudo lsof -i -n -P' # list open ports / running network services
 alias whatismyip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias whois='echo $1 | nc whois.internic.net 43 | sed '/NOTICE:/q' | head -n -4 -'
-alias downthemall='youtube-dl -a download.txt'
 
 # sudo
 alias fuck='sudo $(history -p !!)' # some people are nice and call this "please"
@@ -129,9 +124,3 @@ alias stop='sudo systemctl stop '
 alias restart='sudo systemctl restart '
 alias status='systemctl status '
 alias syslog='journalctl -u '
-
-################################################################################
-# simplify command that are versioned
-##
-
-have jekyll.ruby2.7 && alias jekyll='jekyll.ruby2.7'
