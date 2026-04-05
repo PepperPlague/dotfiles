@@ -7,6 +7,8 @@ if [ -f "$HOME/.git/FETCH_HEAD" ]; then
 	if uname | grep -q FreeBSD; then
 		# BSD
 		LAST_FETCH=$(stat -f %m "$HOME/.git/FETCH_HEAD")
+	elif uname | grep -q Darwin; then
+		LAST_FETCH=$(stat -f %m "$HOME/.git/FETCH_HEAD")
 	else
 		# GNU coreutils
 		LAST_FETCH=$(stat -c %Y "$HOME/.git/FETCH_HEAD")
