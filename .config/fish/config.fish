@@ -17,10 +17,6 @@ if status is-interactive
     # gpg
     set -gx GPG_TTY (tty)
 
-    # theme
-    fish_config theme choose "Dracula Official"
-    starship init fish | source
-
     # Set perferred editors and pager 
     if type -q hx
         set -x EDITOR hx
@@ -34,32 +30,8 @@ if status is-interactive
         set -x PAGER less
     end
 
-    # functions
-    function ..
-        cd ..
-    end
-    function ...
-        cd ../..
-    end
-    function ....
-        cd ../../..
-    end
-    function .....
-        cd ../../../..
-    end
-
     function grep
         command grep --color=auto $argv
-    end
-
-    function !!
-        if type -q sudo
-            eval sudo $history[1]
-        else if type -q doas
-            eval doas $history[1]
-        else
-            su -c $history[1] root
-        end
     end
 
     function md --wraps mkdir -d "Create a directory and cd into it"
