@@ -49,7 +49,7 @@ if status is-interactive
 
     if type -q exa
         alias ls exa
-    else if type -q exz
+    else if type -q eza
         alias ls eza
     end
 
