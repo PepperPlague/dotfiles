@@ -31,28 +31,44 @@ if [ -f "${HOME}/.zgen/zgen.zsh" ]; then
 	if ! zgen saved; then
 		# specify plugins here
 		zgen oh-my-zsh
-		zgen oh-my-zsh plugins/git
-		zgen oh-my-zsh plugins/sudo
+
+		zgen oh-my-zsh
+		zgen oh-my-zsh plugins/aliases
 		zgen oh-my-zsh plugins/command-not-found
-		zgen oh-my-zsh plugins/pass
 		zgen oh-my-zsh plugins/compleat
-		zgen oh-my-zsh plugins/wd
-		zgen oh-my-zsh plugins/dotenv
-		zgen oh-my-zsh plugins/gitfast
-		zgen oh-my-zsh plugins/git
-		zgen oh-my-zsh plugins/z
-		zgen oh-my-zsh plugins/ufw
+		zgen oh-my-zsh plugins/cp
 		zgen oh-my-zsh plugins/dirhistory
+		zgen oh-my-zsh plugins/dotenv
+		zgen oh-my-zsh plugins/eza
+		zgen oh-my-zsh plugins/genpass
+		zgen oh-my-zsh plugins/git
+		zgen oh-my-zsh plugins/git
+		zgen oh-my-zsh plugins/gitfast
+		zgen oh-my-zsh plugins/grc
+		zgen oh-my-zsh plugins/last-working-dir
+		zgen oh-my-zsh plugins/macos
+		zgen oh-my-zsh plugins/pass
+		zgen oh-my-zsh plugins/rsync
+		zgen oh-my-zsh plugins/sublime
+		zgen oh-my-zsh plugins/sublime-merge
+		zgen oh-my-zsh plugins/sudo
+		zgen oh-my-zsh plugins/tailscale
+		zgen oh-my-zsh plugins/ufw
+		zgen oh-my-zsh plugins/wd
+		zgen oh-my-zsh plugins/z
+		zgen oh-my-zsh plugins/zsh-autosuggestions
+		zgen oh-my-zsh plugins/zsh-interactive-cd
+		zgen oh-my-zsh plugins/zsh-syntax-highlighting
 		zgen load MichaelAquilina/zsh-you-should-use
 		zgen load supercrabtree/k
 		zgen load zlsun/solarized-man
-		zgen load $HOME/.config/zsh/colors.zsh
 		zgen load $HOME/.config/zsh/alias.zsh
+		zgen load $HOME/.config/zsh/colors.zsh
 		zgen load $HOME/.config/zsh/find-missing-cmds.zsh
-		zgen load $HOME/.config/zsh/functions.zsh
-		zgen load $HOME/.config/zsh/remind.zsh
 		zgen load $HOME/.config/zsh/fortune.zsh
+		zgen load $HOME/.config/zsh/functions.zsh
 		zgen load $HOME/.config/zsh/prompt.zsh
+		zgen load $HOME/.config/zsh/remind.zsh
 		# generate the init script from plugins above
 		zgen save
 	fi
