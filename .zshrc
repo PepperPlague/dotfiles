@@ -85,6 +85,12 @@ show_prompt
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# Homebrew / macOS stuff
+if uname -a | grep Darwin > /dev/null; then
+	eval $(/opt/homebrew/bin/brew shellenv)
+	export HOMEBREW_UPGRADE_GREEDY=1
+fi
+
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/Users/timothy/.lmstudio/bin"
 # End of LM Studio CLI section
