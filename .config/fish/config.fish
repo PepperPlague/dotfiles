@@ -14,6 +14,8 @@ if status is-interactive
     set -a PATH ~/Library/Python/3.9/bin
     set -x PATH /opt/homebrew/opt/coreutils/libexec/gnubin $PATH
 
+    set -x HOMEBREW_NO_ENV_HINTS 1
+
     # gpg
     set -gx GPG_TTY (tty)
 
