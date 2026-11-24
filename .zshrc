@@ -71,7 +71,7 @@ SAVEHIST=50
 HISTFILE=~/.bash_history
 
 # set default editor
-export EDITOR=nvim
+export EDITOR=hx
 
 case "$TERM" in
     xterm*) TERM=xterm-256color
@@ -81,12 +81,6 @@ esac
 # auto ls when cd'ing
 chpwd() { ls }
 
-# output only if we're in a virtual terminal
-if tty | grep -q /dev/pts; then
-	show_remind
-	show_fortune
-fi
-
 show_prompt
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -95,3 +89,7 @@ show_prompt
 export PATH="$PATH:/Users/timothy/.lmstudio/bin"
 # End of LM Studio CLI section
 
+eval "$(starship init zsh)"
+
+show_remind
+show_fortune
