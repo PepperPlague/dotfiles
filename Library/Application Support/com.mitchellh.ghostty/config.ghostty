@@ -53,3 +53,4 @@
 background-opacity = .75
 background-blur = true
 font-family = IoskeleyMonoTerm Nerd Font Mono
+theme = "dracula"
