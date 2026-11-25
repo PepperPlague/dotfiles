@@ -44,7 +44,6 @@ if [ -f "${HOME}/.zgen/zgen.zsh" ]; then
 		zgen oh-my-zsh plugins/genpass
 		zgen oh-my-zsh plugins/git
 		zgen oh-my-zsh plugins/gitfast
-		zgen oh-my-zsh plugins/grc
 		zgen oh-my-zsh plugins/jump
 		zgen oh-my-zsh plugins/last-working-dir
 		zgen oh-my-zsh plugins/macos
@@ -56,12 +55,10 @@ if [ -f "${HOME}/.zgen/zgen.zsh" ]; then
 		zgen oh-my-zsh plugins/tailscale
 		zgen oh-my-zsh plugins/ufw
 		zgen oh-my-zsh plugins/wd
-		zgen oh-my-zsh plugins/z
 		zgen oh-my-zsh plugins/zsh-autosuggestions
 		zgen oh-my-zsh plugins/zsh-interactive-cd
 		zgen oh-my-zsh plugins/zsh-syntax-highlighting
 		zgen load MichaelAquilina/zsh-you-should-use
-		zgen load supercrabtree/k
 		zgen load zlsun/solarized-man
 		zgen load $HOME/.config/zsh/alias.zsh
 		zgen load $HOME/.config/zsh/colors.zsh

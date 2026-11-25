@@ -30,7 +30,8 @@ alias mv="mv -iv"
 have top && alias top='htop'
 have ncdu && alias du='ncdu'
 have curl && alias wget='curl'
-have nvim && alias nano='nvim'
+have hx && alias vi='hx'
+have micro && alias nano='micro'
 
 ################################################################################
 # aliases for Linux programs to point to the FreeBSD alternate command
@@ -43,12 +44,6 @@ fi
 # ls
 ##
 
-# k is a zsh plugin (see .zshrc)
-if zgen list | grep -q "k.plugin.zsh"; then
-	alias lsl='k -h --group-directories-first | less -R'
-	alias lsd='k -h -d' # list only directories
-fi
-
 if ls --version 2>/dev/null | grep -q GNU; then
 	# GNU coreutils only
 	alias ls='ls --color --group-directories-first -Fh'
@@ -57,8 +52,10 @@ else
 	alias ls='ls -AFhG'
 fi
 
+have eza && alias ls='eza'
+
 # steam trains are nice, but this suits me better
-have lolcat && alias sl='ls $@ | lolcat' || function sl() {
+function sl() {
 	# settle for a Monty Python insult if we don't have lolcat
 	tput setaf 5
 	echo "  You empty headed animal food trough wiper"
@@ -114,7 +111,6 @@ alias whois='echo $1 | nc whois.internic.net 43 | sed '/NOTICE:/q' | head -n -4 
 
 # sudo
 alias fuck='sudo $(history -p !!)' # some people are nice and call this "please"
-alias sedit='sudo nvim'
 alias halt='sudo halt'
 alias reboot='sudo reboot'
 
