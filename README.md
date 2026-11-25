@@ -26,11 +26,12 @@ Here's a high level overview if you just want to see what I use:
   * [uBlock Origin Lite](https://apps.apple.com/us/app/ublock-origin-lite/id6745342698)
   * [Hush](https://oblador.github.io/hush/)
 * **Terminal**: [Ghostty](https://ghostty.org)
-* **Shell**: [zsh](https://www.zsh.org) + [Starship](https://starship.rs)   
-	* **Shell Theme**: [Dracula](https://draculatheme.com)
-	* **Shell Font**: [Ioskeley Mono](https://github.com/ahatem/IoskeleyMono)
+  * **Font**: [Ioskeley Mono](https://github.com/ahatem/IoskeleyMono)
+* **Shell**: [zsh](https://www.zsh.org)
+  * **Prompt**: [Starship](https://starship.rs)   
+  * **Theme**: [Dracula](https://draculatheme.com)
 * **Editor**: [Helix](https://helix-editor.com)                          
-* **IDE**: [Sublime Text](https://www.sublimetext.com)
+* **IDE**: [Sublime Text](https://www.sublimetext.com) + [Sublime Merge](https://www.sublimemerge.com)
 
 ## Installation / Managing
 Installation and day-to-day management requires only git as a dependency. No
