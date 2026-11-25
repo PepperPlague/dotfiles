@@ -42,12 +42,11 @@ if [ -f "${HOME}/.zgen/zgen.zsh" ]; then
 		zgen oh-my-zsh plugins/eza
 		zgen oh-my-zsh plugins/genpass
 		zgen oh-my-zsh plugins/git
-		zgen oh-my-zsh plugins/git
 		zgen oh-my-zsh plugins/gitfast
 		zgen oh-my-zsh plugins/grc
 		zgen oh-my-zsh plugins/last-working-dir
 		zgen oh-my-zsh plugins/macos
-		zgen oh-my-zsh plugins/pass
+		zgen oh-my-zsh plugins/marked2
 		zgen oh-my-zsh plugins/rsync
 		zgen oh-my-zsh plugins/sublime
 		zgen oh-my-zsh plugins/sublime-merge
