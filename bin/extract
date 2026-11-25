@@ -23,7 +23,10 @@ extract_bzip2() {
 }
 
 extract_xz() {
-    if hash pxz 2>/dev/null; then
+    if hash pixz 2>/dev/null; then
+        echo "Using pixz for parallel uncompression..."
+        pixz -d "$@"
+    elif hash pxz 2>/dev/null; then
         echo "Using pxz for parallel uncompression..."
         pxz -dc "$@"
     elif hash unxz 2>/dev/null; then
