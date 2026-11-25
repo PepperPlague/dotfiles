@@ -45,6 +45,7 @@ if [ -f "${HOME}/.zgen/zgen.zsh" ]; then
 		zgen oh-my-zsh plugins/git
 		zgen oh-my-zsh plugins/gitfast
 		zgen oh-my-zsh plugins/grc
+		zgen oh-my-zsh plugins/jump
 		zgen oh-my-zsh plugins/last-working-dir
 		zgen oh-my-zsh plugins/macos
 		zgen oh-my-zsh plugins/marked2
