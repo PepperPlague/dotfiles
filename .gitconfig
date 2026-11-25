@@ -14,12 +14,12 @@
     forcepostreceive = !git commit --amend --no-edit && git push -f live
 
 [gpg]
-    program = /opt/homebrew/bin/gpg
+	program = /opt/homebrew/bin/gpg
 
 [credential]
     helper = cache
 [core]
-    editor = hx
+	editor = hx
 	excludesfile = /Users/timothy/.gitignore_global
 [protocol]
 	version = 2
@@ -35,10 +35,7 @@
 [difftool]
 	prompt = false
 [diff]
-	tool = colordiff
+	tool = smerge
 [safe]
 	directory = /srv/git/dotfiles.git
-[commit]
-	gpgSign = true
-[tag]
-	gpgSign = true
+
