@@ -20,15 +20,17 @@ know what that entails. *Here be dragons!*
 ## Overview
 Here's a high level overview if you just want to see what I use:
 
-* **OS**: [macOS Sonoma](https://www.apple.com/macos/sonoma/) 
+* **OS**: [macOS Golden Gate](https://www.apple.com/macos/) 
 * **Browser**: [Safari](https://www.apple.com/safari/)
-	* **Extensions**: [StopTheMadness Pro](https://apps.apple.com/app/stopthemadness-pro/id6471380298) + [Wipr](https://apps.apple.com/us/app/wipr/id1320666476)
-* **Shell**: [Fish](https://fishshell.com) + [Starship](https://starship.rs)   
+  * [StopTheMadness Pro](https://apps.apple.com/app/stopthemadness-pro/id6471380298)
+  * [uBlock Origin Lite](https://apps.apple.com/us/app/ublock-origin-lite/id6745342698)
+  * [Hush](https://oblador.github.io/hush/)
+* **Terminal**: [Ghostty](https://ghostty.org)
+* **Shell**: [zsh](https://www.zsh.org) + [Starship](https://starship.rs)   
 	* **Shell Theme**: [Dracula](https://draculatheme.com)
-	* **Shell Font**: [Iosevka](https://typeof.net/Iosevka/)
+	* **Shell Font**: [Ioskeley Mono](https://github.com/ahatem/IoskeleyMono)
 * **Editor**: [Helix](https://helix-editor.com)                          
-* **IDE**: [Sublime Text](https://www.sublimetext.com)     
-	* **IDE Font**: [Fira Code](https://github.com/tonsky/FiraCode)
+* **IDE**: [Sublime Text](https://www.sublimetext.com)
 
 ## Installation / Managing
 Installation and day-to-day management requires only git as a dependency. No
@@ -36,7 +38,7 @@ other tools or symlinking are required:
 
 ```console
 $ cd ~
-$ git clone --no-checkout https://github.com/beyondmeh/dotfiles.git .
+$ git clone --no-checkout --depth=1 https://github.com/PepperPlague/dotfilesh.git .
 $ git reset --hard
 ```
 
