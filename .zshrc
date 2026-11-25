@@ -39,6 +39,7 @@ if [ -f "${HOME}/.zgen/zgen.zsh" ]; then
 		zgen oh-my-zsh plugins/cp
 		zgen oh-my-zsh plugins/dirhistory
 		zgen oh-my-zsh plugins/dotenv
+		zgen oh-my-zsh plugins/extract
 		zgen oh-my-zsh plugins/eza
 		zgen oh-my-zsh plugins/genpass
 		zgen oh-my-zsh plugins/git
